@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <div class="container">
+        <form>
+            <input type="text" id="atividade-nova" required placeholder="Digite a tarefa">
+            <button type="submit">Adicionar+</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th class="tarefa">Tarefa</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Tarefas em espera</td>
+                    <td id="tarefa-espera">0</td>
+                </tr>
+                <tr>
+                    <td>Quantidade de Tarefas completas</td>
+                    <td id="tarefa-completa">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
